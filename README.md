@@ -14,8 +14,6 @@ App móvil en Flutter que consume la API pública de [The Movie Database (TMDB)]
 | Variables de entorno | [`flutter_dotenv`](https://pub.dev/packages/flutter_dotenv) |
 | Testing | [`mocktail`](https://pub.dev/packages/mocktail) |
 
-Ver `INTERVIEW_CHEATSHEET.md` para la justificación detallada de cada elección y los trade-offs considerados.
-
 ## Cómo correr la app
 
 ### 1. Requisitos
