@@ -145,7 +145,7 @@ Este proyecto se desarrolló con asistencia de **Claude Code** (Anthropic). La m
 
 1. **Planificación previa**: lectura del PDF del test, análisis de requisitos, propuesta de stack y arquitectura, validación de decisiones de scope con el desarrollador (películas+series, Riverpod, búsqueda incluida). Resultado guardado en un plan estructurado.
 2. **Implementación guiada**: la IA generó el código siguiendo el plan acordado. Yo revisé cada archivo, validé que los providers y dependencias estuvieran bien conectados, y corregí decisiones cuando difería de la dirección que quería tomar.
-3. **Decisiones de arquitectura y librerías**: validadas y entendidas por mí, no delegadas. Cada elección de stack tiene un razonamiento que puedo defender (ver `INTERVIEW_CHEATSHEET.md`).
+3. **Decisiones de arquitectura y librerías**: validadas y entendidas por mí, no delegadas. Cada elección de stack tiene un razonamiento que puedo defender.
 4. **Resolución de problemas**: cuando aparecieron incompatibilidades del ecosistema (como un conflicto entre `analyzer 7.x` y `analyzer_plugin 0.12.0` que arrastraba `riverpod_generator`), evalué las opciones y decidí migrar de providers con code-gen a providers manuales — la elección minimiza dependencias frágiles y no compromete la calidad.
 5. **Tests**: definidos con criterio de "1 test mínimo por capa" para demostrar conocimiento de testing en cada nivel (DTO mapping, repository, usecase, provider).
 
