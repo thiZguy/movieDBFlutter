@@ -179,5 +179,3 @@ Resultado: `flutter test` corre **12 tests, todos verdes**.
 ## Contacto
 
 - **Autor**: Santiago Montero (santiagojosemontero@gmail.com)
-- **Repositorio**: [link al repo privado]
-- **Acceso para evaluador**: alberto.marturelo@equifax.com
