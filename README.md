@@ -131,7 +131,7 @@ Estas quedaron fuera por scope/tiempo. Son explícitamente las cosas que mencion
 |--------|------|
 | **Paginación con scroll infinito** | Usar `AsyncNotifier` que mantiene una lista acumulada y un `int page` interno. Disparar el siguiente fetch con un `ScrollController` cuando el usuario llega cerca del final. |
 | **Cache offline** | Agregar `Drift` o `Hive` en `data/datasources/local/`. El repository chequea cache primero, fallback a remote, actualiza cache (patrón stale-while-revalidate). |
-| **Internacionalización** | `flutter_localizations` + `intl` con archivos `.arb`. Por ahora la API se pide con `language=es-AR`, pero la UI propia está hardcodeada en español. |
+| **Internacionalización** | `flutter_localizations` + `intl` con archivos `.arb`. Por ahora la API se pide con `language=es`, pero la UI propia está hardcodeada en español. |
 | **Backend proxy para la API key** | La API key está en `.env`, lo cual evita filtración por git pero igual queda en el binario. En producción real, lo correcto es un backend que actúa de proxy y guarda el token server-side. |
 | **Tests de widget e integración** | Hoy hay tests de cada capa (data, domain, presentation/providers) pero no de UI. Agregaría tests de widget con `WidgetTester` para las pantallas principales y un test de integración E2E del golden path. |
 | **CI/CD** | GitHub Actions corriendo `flutter analyze` + `flutter test` + `dart run build_runner build` en cada PR. |

@@ -8,7 +8,7 @@ App móvil Flutter que consume TheMovieDB API. Es un test técnico para Equifax 
 
 **Prioridades, en orden:**
 1. Simplicidad y legibilidad — el evaluador debe entender el código rápido
-2. Decisiones defendibles — preferí lo "boring & probado" sobre lo "fancy"
+2. Decisiones defendibles — prefiere lo "boring & probado" sobre lo "fancy"
 3. Buenas prácticas: arquitectura, DI, testing — pero sin sobre-ingeniería
 
 ## Stack (no cambiar sin razón fuerte)
@@ -62,7 +62,7 @@ UI → ref.watch(provider) → Usecase → Repository (abstract)
 - **NO usar `Either<Failure, T>` ni `dartz`.** Decidido: agrega dependencia y verbosidad sin valor en este stack.
 
 ### Providers (Riverpod)
-- **Manual, sin `@riverpod` annotation.** Razón histórica: `riverpod_generator` arrastra `analyzer_plugin 0.12.0` que no compila con `analyzer 7.x`. Si querés volver a code-gen, primero verificá compatibilidad.
+- **Manual, sin `@riverpod` annotation.** Razón histórica: `riverpod_generator` arrastra `analyzer_plugin 0.12.0` que no compila con `analyzer 7.x`. Si quieres volver a code-gen, primero verifica compatibilidad.
 - Patrón estándar:
   ```dart
   final fooRepositoryProvider = Provider<FooRepository>((ref) {
@@ -162,4 +162,4 @@ Probado: `riverpod_generator 2.6.4` requiere `riverpod_analyzer_utils 0.5.9` que
 
 ## Idioma
 
-Todo el código y los comentarios pueden mezclar inglés (identificadores, librerías) y español (comentarios, mensajes UI). La UI debe estar en español. La API se pide en `language=es-AR` cuando aplica.
+Todo el código y los comentarios pueden mezclar inglés (identificadores, librerías) y español (comentarios, mensajes UI). La UI debe estar en español. La API se pide en `language=es` cuando aplica.

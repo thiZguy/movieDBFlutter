@@ -42,7 +42,7 @@ class _MoviesResults extends ConsumerWidget {
     final results = ref.watch(movieSearchResultsProvider);
 
     if (query.isEmpty) {
-      return const _Hint(message: 'Escribí para buscar películas.');
+      return const _Hint(message: 'Escribe para buscar películas.');
     }
 
     return AnimatedSwitcher(
@@ -69,7 +69,7 @@ class _TvResults extends ConsumerWidget {
     final results = ref.watch(tvSearchResultsProvider);
 
     if (query.isEmpty) {
-      return const _Hint(message: 'Escribí para buscar series.');
+      return const _Hint(message: 'Escribe para buscar series.');
     }
 
     return AnimatedSwitcher(
